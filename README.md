@@ -9,9 +9,12 @@ Ideas:
 - First notice: the bottom right element is the maximal element of the array.
 - If this element is smaller than a, a is not in the array.
 - If this element is equal to a, we are done and we can return True.
-- If this element is greater than a, we can check the next element on the diagonal, i.e. the element at indices [m-1, n-1] and notice that:
+- If this element is greater than a, we can check the next element on the diagonal, i.e. the element at indices [m-1, n-1] and notice that: 1) if it is equal to a, we can terminate. 2) if it is smaller than a, we know that a is not in the last line or the last column and we can keep checking the elements diagonal.
+- If no elements checked on the diagonal (completed by the end of the first line if n > m and the end of the first column if m > n) are smaller than a, then all the elements in the array are greater than a, and we return False.
+- If at some indices (b, r) we stopped, because we found an element smaller than a, then we only have to check if a is in the top right and bottom left corners defined by those indices (all the elements in the top left corner are too small, all the elements in the bottom right are too large).
 
 This can be implemented easily. The tricky part is mainly to get the indices right and not to forget to check a last line / column when the diagonal has been fully checked (the matrix is not necessarily squared!).
 
+Complexity analysis:
+- Assume for simplicity m=n and m=2^r
 
-Complexity analysis
