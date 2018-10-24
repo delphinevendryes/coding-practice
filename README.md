@@ -1,5 +1,5 @@
 # coding-practice
-Simple practice problems: data structures and algorithms
+Simple practice problems: data structures and algorithms. This is a compilation of problems that I have found on line or collected from my experience.
 
 ## Parenthesis checker
 
