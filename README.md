@@ -1,23 +1,23 @@
-# coding-practice
+# Coding practice
 Simple practice problems: data structures and algorithms. This is a compilation of problems that I have found on line or collected from my experience.
 
-## Parenthesis checker
+### Parenthesis checker
 
 Use a stack.
 
-## Reverse LinkedList
+### Reverse LinkedList
 
 Store values and recreate linked list after transversal or create list online.
 
-## Get middle element of LinkedList
+### Get middle element of LinkedList
 
 Traverse linked list to get length (if not implemented). Store values or traverse again to get middle.
 
-## Print Left View of Binary Tree
+### Print Left View of Binary Tree
 
 I use my implementation of BinaryTree.
 
-## Search array
+### Search array
 Given a (m x n) 2D-array of integers with ordered lines and columns (e.g. [[1,2,3], [2,3,4]]), find a given element a.
 
 Ideas:
