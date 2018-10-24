@@ -17,4 +17,6 @@ This can be implemented easily. The tricky part is mainly to get the indices rig
 
 Complexity analysis:
 - Assume for simplicity m=n and m=2^r
-
+- Checking the elements on the diagonal of an array of size m takes O(m) operations.
+- The worst case scenario is if we cut the array in half at every recursion. Every recursion that does not terminate calls 2 new recursions. We have to check one array of size 2^r, then 2 arrays of size 2^{r-1}, 4 arrays of size 2^{r-2}, etc.
+- This takes O(2^r + 2 x 2^{r-1} + 4 x 2^{r-1} + ... + 2^{r} x 1) operations, i.e. O(r 2^r) = 0(m log m).
